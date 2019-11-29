@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Test Post</title>
+      <link href="/2019/11/29/first/"/>
+      <url>/2019/11/29/first/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Test-Code"><a href="#Test-Code" class="headerlink" title="Test Code"></a>Test Code</h1><pre><code class="json">{  &quot;x&quot;: 123,  &quot;d&quot;: 333}</code></pre><h1 id="Test-Tasks"><a href="#Test-Tasks" class="headerlink" title="Test Tasks"></a>Test Tasks</h1><ul><li><input checked="" disabled="" type="checkbox"> Write the press release</li><li><input disabled="" type="checkbox"> Update the website</li><li><input disabled="" type="checkbox"> Contact the media</li></ul><h1 id="Test-youtube"><a href="#Test-youtube" class="headerlink" title="Test youtube"></a>Test youtube</h1><div class="video-container"><iframe src="//www.youtube.com/embed/4wwVghdR-ho" frameborder="0" allowfullscreen></iframe></div><h1 id="Test-Link"><a href="#Test-Link" class="headerlink" title="Test Link"></a>Test Link</h1><p><a href="https://www.google.com" target="_blank" rel="noopener">Test link</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> cat1 </category>
+          
+          <category> cat2 </category>
+          
+          <category> cat3 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> tag1 </tag>
+            
+            <tag> tag2 </tag>
+            
+            <tag> tag3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
