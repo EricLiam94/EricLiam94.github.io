@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Shuffle</title>
+      <link href="/2019/11/30/not-test/"/>
+      <url>/2019/11/30/not-test/</url>
+      
+        <content type="html"><![CDATA[<ul><li>Shuffle(Python)</li></ul><pre><code class="python">from copy import deepcopyfrom random import randintdef shuffle(lst):    temp_lst = deepcopy(lst)    m = len(temp_lst)    while (m):        m -= 1        i = randint(0, m)        temp_lst[m], temp_lst[i] = temp_lst[i], temp_lst[m]    return temp_lst</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> cat2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> tag1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Test Post</title>
       <link href="/2019/11/29/first/"/>
       <url>/2019/11/29/first/</url>

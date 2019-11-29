@@ -5,12 +5,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Eric&#39;s Blog</title>
+    <title>Shuffle - Eric&#39;s Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Eric Jingxin Huang Blog,"> 
-    <meta name="description" content="This is Eric Blog,"> 
+    <meta name="description" content="This is Eric Blog,
+Shuffle(Python)
+
+from copy import deepcopy
+from random import randint
+
+
+def shuffle(lst):
+    temp,"> 
     <meta name="author" content="Eric"> 
     <link rel="alternative" href="atom.xml" title="Eric&#39;s Blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -36,30 +44,156 @@
     </div>
     <span id="config-title" style="display:none">Eric&#39;s Blog</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="iconfont icon-left image-icon" href="javascript:history.back()" target="_self"></a>
-    </div>
-    <div class="clone-element"></div>
-    <div class="section dark-obsidian">
-        <div class="article animated fadeIn">
-            <div class="main animated fadeIn">
-                <div class="content animated fadeIn">
-                
-                    <div class="set">
-    <h1>Tags</h1>
-    <div class="tagcloud">
-        <a href="/tags/tag1/" style="font-size: 16px; color: #0052d4">tag1</a> <a href="/tags/tag2/" style="font-size: 16px; color: #0ed2f7">tag2</a> <a href="/tags/tag3/" style="font-size: 16px; color: #0ed2f7">tag3</a>
-    </div>
-</div>
-
-                
-                </div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="http://localhost:4000">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">Shuffle</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" target="_blank" rel="noopener" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+    
             </div>
         </div>
     </div>
 </div>
 
+    <div class="section">
+        <div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover.jpg);">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="/categories/cat2"><b>「
+                    </b>CAT2<b> 」</b></a>
+                
+                November 30, 2019
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/2019/11/30/not-test/" title="Shuffle" class="">Shuffle</a>
+            </h3>
+            
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>Words count</i>
+                    335
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
+                    1 mins.
+                </span>
+                
+                
+                <span id="/2019/11/30/not-test/" class="leancloud_visitors" data-flag-title="Shuffle">
+                    <b class="iconfont icon-read"></b> <i>Read count</i>
+                    <i class="leancloud-visitors-count">1000000</i>
+                </span>
+                
+                
+            </p>
+            
+            
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/tag1/" rel="tag">tag1</a></li></ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="animated fadeIn delay-1s"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <ul>
+<li>Shuffle(Python)</li>
+</ul>
+<pre><code class="python">from copy import deepcopy
+from random import randint
+
+
+def shuffle(lst):
+    temp_lst = deepcopy(lst)
+    m = len(temp_lst)
+    while (m):
+        m -= 1
+        i = randint(0, m)
+        temp_lst[m], temp_lst[i] = temp_lst[i], temp_lst[m]
+    return temp_lst</code></pre>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/statics/chengdu.mp3'></li>
+                
+                    
+            </ul>
+            
+            
+            
+            <div id="vcomments"></div>
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="https://pbs.twimg.com/profile_images/635370601050324992/YHFjpPk0_400x400.jpg" height=300 width=300></img>
+                    <p>Eric</p>
+                    <span>Think out of the box</span>
+                    <dl>
+                        <dd><a href="https://github.com/EricLiam94" target="_blank"><span
+                                    class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="/" target="_blank"><span
+                                    class=" iconfont icon-twitter"></span></a></dd>
+                        <dd><a href="/" target="_blank"><span
+                                    class=" iconfont icon-stack-overflow"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">2 <p>Articles</p></a></li>
+                    <li><a href="/categories">4 <p>Categories</p></a></li>
+                    <li><a href="/tags">3 <p>Tags</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
     <div id="back-to-top" class="animated fadeIn faster">
         <div class="flow"></div>
         <span class="percentage animated fadeIn faster">0%</span>
