@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Build your own Blog and host in Github</title>
+      <link href="/2019/11/30/hexo-build/"/>
+      <url>/2019/11/30/hexo-build/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Preview"><a href="#Preview" class="headerlink" title="Preview"></a><strong>Preview</strong></h1><p>Building own blog is benefitial for seeking a job, especially a CS related job. It records your achievements and reflects your learning journey. In addition, you can use blog to share your ideas and make friends. This post shares my experience establishing the blog website.</p><h1 id="Prerequisite"><a href="#Prerequisite" class="headerlink" title="Prerequisite"></a><strong>Prerequisite</strong></h1><ol><li>Node.js is installed</li><li>JavaScript Knowledge is required</li><li>Git</li></ol><h1 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a><strong>Install Hexo</strong></h1><p>Hexo is a fast, simple and powerful blog framework, which helps you establish a blog website in a short time.<br>In windows terminal, using <strong>npm</strong> to install hexo.</p><pre><code class="shell">npm install hexo-cli -g</code></pre><h1 id="Initialize-Hexo"><a href="#Initialize-Hexo" class="headerlink" title="Initialize Hexo"></a><strong>Initialize Hexo</strong></h1><p>After installation, we can start to build the first blog website. In the terminal, direct to the folder you want to store the website. Then, type the following command.</p><pre><code class="bash">    hexo init yourFolderName</code></pre><p>This will take seconds to initialize the hexo folder.</p><h1 id="Introduction-of-Hexo-Framework"><a href="#Introduction-of-Hexo-Framework" class="headerlink" title="Introduction of Hexo Framework"></a><strong>Introduction of Hexo Framework</strong></h1><p>Hexo provides a clear stureture for users. they can customize some components without interupting others.<br>There are four marjor components: <strong>scaffolds</strong>, <strong>source</strong>, <strong>themes</strong> and <strong>_config.yml</strong>.</p><h2 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a><strong>scaffolds</strong></h2><p>It provides the template of draft, post and page. These templates can be modified to fit your own style. Also, your can build new template.</p><img src="/2019/11/30/hexo-build/scaffolds.png" class="" title="there main templates in scaffolds"><h2 id="source"><a href="#source" class="headerlink" title="source"></a><strong>source</strong></h2><p>This contains your blog content, and you will spend most of time on it.</p><img src="/2019/11/30/hexo-build/source.png" class="" title="source folder"><p>To create create new content, direct to your root directory of Hexo folder and type following code in terminal.</p><pre><code class="bash">hexo new yourFileName</code></pre><p>By default, hexo will create a post in source/_posts folder.<br>To create other types of content (draft or page), specify the type after <code>new</code>.</p><ul><li>Create a post</li></ul><pre><code class="bash">hexo new post yourPostName</code></pre><ul><li>Create a draft</li></ul><pre><code class="bash">hexo new draft yourDraftName</code></pre><ul><li>Create a web page</li></ul><pre><code class="bash">hexo new page yourPageName</code></pre><p>The content should be written in <a href="https://www.markdownguide.org/" target="_blank" rel="noopener">Markdown Language</a></p><p><strong>All types should correspond to the type name in scaffolds</strong>.</p><h2 id="themes"><a href="#themes" class="headerlink" title="themes"></a><strong>themes</strong></h2><p>This folder contains front-end code. You can cutomize your own theme or use themes from <a href="https://hexo.io/themes/" target="_blank" rel="noopener">Theme Market</a>.</p><hr><p>You can change your theme in <code>config.yml</code>.</p><h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a><strong>_config.yml</strong></h2><p>this file stores configuration of your entire blog website, such as your blog name.</p><img src="/2019/11/30/hexo-build/config.png" class="" title="config.yml"><h1 id="Hosting-your-website"><a href="#Hosting-your-website" class="headerlink" title="Hosting your website"></a><strong>Hosting your website</strong></h1><h2 id="Create-a-new-repository-in-Github"><a href="#Create-a-new-repository-in-Github" class="headerlink" title="Create a new repository in Github"></a>Create a new repository in Github</h2><p>The repository name should strictly follow the structure of <code>yourGitHubName.github.io</code></p><blockquote><p>For me, my github name is EricLiam94, so my repository name would be <strong>EricLiam94.github.io</strong></p></blockquote><img src="/2019/11/30/hexo-build/Repository.png" class="" title="repository name"><h2 id="Link-to-your-github"><a href="#Link-to-your-github" class="headerlink" title="Link to your github"></a><strong>Link to your github</strong></h2><p>In your <strong>_config.yml</strong> file, fill the deploy session as following.</p><img src="/2019/11/30/hexo-build/git_config.png" class="" title="link to github"><p>you can directly copy the repo from your github repository:</p><img src="/2019/11/30/hexo-build/github.png" class="" title="link to github"><h2 id="install-hexo-deployer-git-and-depoly-your-site-onto-Github"><a href="#install-hexo-deployer-git-and-depoly-your-site-onto-Github" class="headerlink" title="install hexo-deployer-git and depoly your site onto Github"></a><strong>install hexo-deployer-git and depoly your site onto Github</strong></h2><p>First, we need to install <strong>hexo-deployer-git</strong> .</p><pre><code class="bash">    npm install hexo-deployer-git --save</code></pre><p>After installation, we can start to depoly our website.</p><pre><code class="bash">    hexo clean    hexo generate    hexo deploy</code></pre><hr><p>Finally, we create our first blog website. To visit the website, just input the repository name as url address. Also you can replace the domain with your own domain in Repository setting and use CNAME to reference it.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Shuffle</title>
       <link href="/2019/11/30/not-test/"/>
       <url>/2019/11/30/not-test/</url>
@@ -13,14 +40,18 @@
       
       <categories>
           
-          <category> cat2 </category>
+          <category> Algorithms </category>
+          
+          <category> Python </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> tag1 </tag>
+            <tag> Algorithms </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -33,27 +64,19 @@
       <link href="/2019/11/29/first/"/>
       <url>/2019/11/29/first/</url>
       
-        <content type="html"><![CDATA[<h1 id="Test-Code"><a href="#Test-Code" class="headerlink" title="Test Code"></a>Test Code</h1><pre><code class="json">{  &quot;x&quot;: 123,  &quot;d&quot;: 333}</code></pre><h1 id="Test-Tasks"><a href="#Test-Tasks" class="headerlink" title="Test Tasks"></a>Test Tasks</h1><ul><li><input checked="" disabled="" type="checkbox"> Write the press release</li><li><input disabled="" type="checkbox"> Update the website</li><li><input disabled="" type="checkbox"> Contact the media</li></ul><h1 id="Test-youtube"><a href="#Test-youtube" class="headerlink" title="Test youtube"></a>Test youtube</h1><div class="video-container"><iframe src="//www.youtube.com/embed/4wwVghdR-ho" frameborder="0" allowfullscreen></iframe></div><h1 id="Test-Link"><a href="#Test-Link" class="headerlink" title="Test Link"></a>Test Link</h1><p><a href="https://www.google.com" target="_blank" rel="noopener">Test link</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Test-Code"><a href="#Test-Code" class="headerlink" title="Test Code"></a>Test Code</h1><pre><code class="json">{  &quot;x&quot;: 123,  &quot;d&quot;: 333}</code></pre><h1 id="Test-Tasks"><a href="#Test-Tasks" class="headerlink" title="Test Tasks"></a>Test Tasks</h1><ul><li><input checked="" disabled="" type="checkbox"> Write the press release</li><li><input disabled="" type="checkbox"> Update the website</li><li><input disabled="" type="checkbox"> Contact the media</li></ul><h1 id="Test-youtube"><a href="#Test-youtube" class="headerlink" title="Test youtube"></a>Test youtube</h1><div class="video-container"><iframe src="//www.youtube.com/embed/4wwVghdR-ho" frameborder="0" allowfullscreen></iframe></div><h1 id="Test-Link"><a href="#Test-Link" class="headerlink" title="Test Link"></a>Test Link</h1><p><a href="https://www.google.com" target="_blank" rel="noopener">Test link</a></p><h1 id="Test-Image"><a href="#Test-Image" class="headerlink" title="Test Image"></a>Test Image</h1><img src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" class="img"><h1 id="Test-Post-Link"><a href="#Test-Post-Link" class="headerlink" title="Test Post Link"></a>Test Post Link</h1><a href="/2019/11/30/hexo-build/" title="Build your own Blog">Build your own Blog</a>]]></content>
       
       
       <categories>
           
-          <category> cat1 </category>
-          
-          <category> cat2 </category>
-          
-          <category> cat3 </category>
+          <category> test </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> tag1 </tag>
-            
-            <tag> tag2 </tag>
-            
-            <tag> tag3 </tag>
+            <tag> test </tag>
             
         </tags>
       
