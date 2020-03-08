@@ -5,12 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Tag: blog - Eric&#39;s Blog</title>
+    <title>Difference? var, let and const - Eric&#39;s Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Eric Jingxin Huang Blog,"> 
-    <meta name="description" content="This is Eric Blog,"> 
+    <meta name="description" content="This is Eric Blog,Varvar variables can be redefined or updated.
+    var width = 100;
+    console.log(width); // 100
+ ,"> 
     <meta name="author" content="Eric"> 
     <link rel="alternative" href="atom.xml" title="Eric&#39;s Blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -36,137 +39,70 @@
     </div>
     <span id="config-title" style="display:none">Eric&#39;s Blog</span>
     <div id="loader"></div>
-    <div class="nav">
-    <ul id="menu-menu" class="menu">
-        
-        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/whoami/" title="ABOUT" external="false">ABOUT</a>
-        </li>
-        
-        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/categories/" title="CATEGORIES" external="false">CATEGORIES</a>
-        </li>
-        
-        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/tags/" title="TAGS" external="false">TAGS</a>
-        </li>
-        
-        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/archives/" title="ARCHIVES" external="false">ARCHIVES</a>
-        </li>
-        
-    </ul>
-    <p class="copyright" id="copyright">
-        &copy; 2020 Eric.
-        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
-        Theme <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
-    </p>
-</div>
-
-<div id="container">
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="http://ericliam94.github.io">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">Difference? var, let and const</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" target="_blank" rel="noopener" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
     
-<div class="search-box">
-    <form class="site-search-form">
-        <span class="iconfont icon-search"></span>
-        <input type="text" id="local-search-input" class="st-search-input" />
-        <div class="iconfont icon-cross search-box-close"></div>
-    </form>
-    <div class="search-scrollable">
-        <div id="local-search-result" class="local-search-result-cls" data-initialise="Initialising search index..."
-            data-start="Please input search keywords." data-empty="No result found, please try other keywords.">
-            <span>Please input search keywords.</span>
+            </div>
         </div>
     </div>
 </div>
-<div id="header">
-    <div>
-        <div class="logo animated fadeInDown">
-            <img src="/img/favicon.png" alt="">
-            <a class="image-logo" href="/"></a>
+
+    <div class="section">
+        <div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover.jpg);">
         </div>
-        <ul id="menu-menu" class="menu text-menu">
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="javascript:;" target="_blank" rel="noopener"><b>「 </b>Article<b> 」</b></a>
+                
+                March 08, 2020
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/03/08/variables/" title="Difference? var, let and const" class="">Difference? var, let and const</a>
+            </h3>
             
-            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/whoami/" title="ABOUT" external="false" class="menu-link">ABOUT</a>
-            </li>
-            
-            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/categories/" title="CATEGORIES" external="false" class="menu-link">CATEGORIES</a>
-            </li>
-            
-            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/tags/" title="TAGS" external="false" class="menu-link">TAGS</a>
-            </li>
-            
-            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/archives/" title="ARCHIVES" external="false" class="menu-link">ARCHIVES</a>
-            </li>
-            
-            
-            <li class="animated fadeInDown search-bar iconfont icon-search"></li>
-            
-        </ul>
-        <div class="iconfont icon-menu switchmenu gradient-text animated fadeInDown"></div>
-    </div>
-</div>
-<div id="screen">
-    <div id="mark">
-        <div class="cover animated fadeIn" style="
-            animation-delay: 900ms;
-            animation-duration: 2.8s;
-            background-image:
-                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.56), #100e17),
-                url(https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/06/machine_learning_github.jpg);">
-        </div>
-    </div>
-    
-    <div id="post0" class="else">
-        <p class="animated fadeInDown">
-            
-            <a href="/categories/Blog"><b>「
-                </b>BLOG<b> 」</b></a>
-            
-            November 30, 2019
-        </p>
-        <h3 class="post-title animated fadeInDown">
-            <a href="/2019/11/30/hexo-build/" title="Build your own Blog and host in Github" class="posttitle">Build your own Blog and host in Github</a></h3>
-        
-        <p class="post-count animated fadeInDown">
-            
-            <span>
-                <b class="iconfont icon-text2"></b> <i>Words count</i>
-                6k
-            </span>
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>Words count</i>
+                    2.8k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
+                    3 mins.
+                </span>
+                
+                
+                <span id="/2020/03/08/variables/" class="leancloud_visitors" data-flag-title="Difference? var, let and const">
+                    <b class="iconfont icon-read"></b> <i>Read count</i>
+                    <i class="leancloud-visitors-count">1000000</i>
+                </span>
+                
+                
+            </p>
             
             
-            <span>
-                <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                5 mins.
-            </span>
-            
-            
-            <span id="/2019/11/30/hexo-build/" class="leancloud_visitors" data-flag-title="">
-                <b class="iconfont icon-read"></b> <i>Read count</i>
-                <i class="leancloud-visitors-count">1000000</i>
-            </span>
-            
-        </p>
-        
-        
-        <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/github/" rel="tag">github</a></li></ul>
-        
-        <div class="md-content animated fadeIn">
-            
-            <p>Building own blog is benefitial for seeking a job, especially a CS related job. It records your achievements and reflects your learning journey. In addition, you can use blog to share your ideas and make friends. This post shares my experience establishing the blog website.</p>
-<ol>
-<li>Node.js is installed</li>
-<li>JavaScript...</li></ol>
-            
-            <span class="read-more"><a href="/2019/11/30/hexo-build/" title="Read article" class="posttitle">Read article</a>
-                <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
     </div>
-    
 </div>
 
 <div class="screen-gradient-after">
@@ -174,21 +110,115 @@
         <div class="screen-gradient-content-inside">
             <div class="bold-underline-links screen-gradient-sponsor">
                 <p>
-                    <span class="typed-text"></span>
+                    <span class="animated fadeIn delay-1s"></span>
                 </p>
             </div>
         </div>
     </div>
 </div>
 
-    <div id="primary">
-        
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <h1 id="Var"><a href="#Var" class="headerlink" title="Var"></a>Var</h1><p><strong>var</strong> variables can be redefined or updated.</p>
+<pre><code class="javaScript">    var width = 100;
+    console.log(width); // 100
+    var width = 200;
+    console.log(width); // 200</code></pre>
+<p>Same variable name would not result in error.</p>
+<h2 id="Scope"><a href="#Scope" class="headerlink" title="Scope"></a>Scope</h2><blockquote>
+<p>they’re function scope, which means that they are only available inside the function that they are created in. However, if they are not declared in a function, then they are globally scoped, and they’re available in the whole window.</p>
+</blockquote>
+<h2 id="Variable-Hoisting"><a href="#Variable-Hoisting" class="headerlink" title="Variable Hoisting"></a>Variable Hoisting</h2><p>Another feature of var is variable hoisting which allows a variable declared after it has been used.</p>
+<pre><code class="javaScript">    x = 5; // Assign 5 to x
+    console.log(x)  // log 5
+    var x; // Declare x</code></pre>
+<p>Whereas let and const don’t support such feature.</p>
+<h1 id="let-and-const"><a href="#let-and-const" class="headerlink" title="let and const"></a>let and const</h1><h2 id="Scope-1"><a href="#Scope-1" class="headerlink" title="Scope"></a>Scope</h2><blockquote>
+<p>let and const are block scope, which means any time you’ve got a set of curly brackets you have block scope.</p>
+</blockquote>
+<pre><code class="javaScript">    const key = &#39;abc123&#39;;
+    let points = 50;
+    let winner = false;
+
+    if(points &gt; 40) {
+       let winner = true
+    }
+    console.log(winner)  // log false</code></pre>
+<h2 id="Immutable"><a href="#Immutable" class="headerlink" title="Immutable"></a>Immutable</h2><p>let variables are mutable which means the values of variables can be updated later</p>
+<pre><code class="javaScript">let name = &quot;eric&quot;
+name = &quot;jack&quot;
+console.log(name)  // log &quot;Jack&quot;</code></pre>
+<p>const variables are immutable resulting in their values can not be updated</p>
+<pre><code class="javaScript">    const age = 18
+    age = 20  // error occurs</code></pre>
+<p>However, if a JavaScipt is declared with const varibale. the value inside can be updated. For example,</p>
+<pre><code class="javaScript">    const dog = {name:&quot;mimi&quot;,age:&quot;4&quot;}
+    dog.name = &quot;kiki&quot;
+    console.log(dog)  // log { name: &#39;kiki&#39;, age: &#39;4&#39; }</code></pre>
+<p>So if you do want to a JavaScript object immutable, the following code can help:</p>
+<pre><code class="javaScript">    const wes = Object.freeze(dog);
+    console.log(wes)  // log {name:&quot;kiki&quot;,age:&quot;4&quot;}
+    wes.name = &quot;new name&quot;
+    console.log(wes)  // still log {name:&quot;kiki&quot;,age:&quot;4&quot;}</code></pre>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/statics/chengdu.mp3'></li>
+                
+                    
+            </ul>
+            
+            
+            
+            <div id="vcomments"></div>
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="https://pbs.twimg.com/profile_images/635370601050324992/YHFjpPk0_400x400.jpg" height=300 width=300></img>
+                    <p>Eric</p>
+                    <span>Think out of the box</span>
+                    <dl>
+                        <dd><a href="https://github.com/EricLiam94" target="_blank"><span
+                                    class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="/" target="_blank"><span
+                                    class=" iconfont icon-twitter"></span></a></dd>
+                        <dd><a href="/" target="_blank"><span
+                                    class=" iconfont icon-stack-overflow"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">4 <p>Articles</p></a></li>
+                    <li><a href="/categories">4 <p>Categories</p></a></li>
+                    <li><a href="/tags">5 <p>Tags</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>Contents</h4>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Var"><span class="toc-number">1.</span> <span class="toc-text">Var</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Scope"><span class="toc-number">1.1.</span> <span class="toc-text">Scope</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Variable-Hoisting"><span class="toc-number">1.2.</span> <span class="toc-text">Variable Hoisting</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#let-and-const"><span class="toc-number">2.</span> <span class="toc-text">let and const</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Scope-1"><span class="toc-number">2.1.</span> <span class="toc-text">Scope</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Immutable"><span class="toc-number">2.2.</span> <span class="toc-text">Immutable</span></a></li></ol></li></ol>
+                </div>
+            </div>
+            
+            
+        </div>
     </div>
-    
 </div>
-<div id="preview"></div>
 
-
+    </div>
+</div>
     <div id="back-to-top" class="animated fadeIn faster">
         <div class="flow"></div>
         <span class="percentage animated fadeIn faster">0%</span>

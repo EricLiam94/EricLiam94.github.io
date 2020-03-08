@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Difference? var, let and const</title>
+      <link href="/2020/03/08/variables/"/>
+      <url>/2020/03/08/variables/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Var"><a href="#Var" class="headerlink" title="Var"></a>Var</h1><p><strong>var</strong> variables can be redefined or updated.</p><pre><code class="javaScript">    var width = 100;    console.log(width); // 100    var width = 200;    console.log(width); // 200</code></pre><p>Same variable name would not result in error.</p><h2 id="Scope"><a href="#Scope" class="headerlink" title="Scope"></a>Scope</h2><blockquote><p>they’re function scope, which means that they are only available inside the function that they are created in. However, if they are not declared in a function, then they are globally scoped, and they’re available in the whole window.</p></blockquote><h2 id="Variable-Hoisting"><a href="#Variable-Hoisting" class="headerlink" title="Variable Hoisting"></a>Variable Hoisting</h2><p>Another feature of var is variable hoisting which allows a variable declared after it has been used.</p><pre><code class="javaScript">    x = 5; // Assign 5 to x    console.log(x)  // log 5    var x; // Declare x</code></pre><p>Whereas let and const don’t support such feature.</p><h1 id="let-and-const"><a href="#let-and-const" class="headerlink" title="let and const"></a>let and const</h1><h2 id="Scope-1"><a href="#Scope-1" class="headerlink" title="Scope"></a>Scope</h2><blockquote><p>let and const are block scope, which means any time you’ve got a set of curly brackets you have block scope.</p></blockquote><pre><code class="javaScript">    const key = &#39;abc123&#39;;    let points = 50;    let winner = false;    if(points &gt; 40) {       let winner = true    }    console.log(winner)  // log false</code></pre><h2 id="Immutable"><a href="#Immutable" class="headerlink" title="Immutable"></a>Immutable</h2><p>let variables are mutable which means the values of variables can be updated later</p><pre><code class="javaScript">let name = &quot;eric&quot;name = &quot;jack&quot;console.log(name)  // log &quot;Jack&quot;</code></pre><p>const variables are immutable resulting in their values can not be updated</p><pre><code class="javaScript">    const age = 18    age = 20  // error occurs</code></pre><p>However, if a JavaScipt is declared with const varibale. the value inside can be updated. For example,</p><pre><code class="javaScript">    const dog = {name:&quot;mimi&quot;,age:&quot;4&quot;}    dog.name = &quot;kiki&quot;    console.log(dog)  // log { name: &#39;kiki&#39;, age: &#39;4&#39; }</code></pre><p>So if you do want to a JavaScript object immutable, the following code can help:</p><pre><code class="javaScript">    const wes = Object.freeze(dog);    console.log(wes)  // log {name:&quot;kiki&quot;,age:&quot;4&quot;}    wes.name = &quot;new name&quot;    console.log(wes)  // still log {name:&quot;kiki&quot;,age:&quot;4&quot;}</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Build your own Blog and host in Github</title>
       <link href="/2019/11/30/hexo-build/"/>
       <url>/2019/11/30/hexo-build/</url>
