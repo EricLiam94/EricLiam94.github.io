@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>npm of yarn</title>
+      <link href="/2020/03/11/npm/"/>
+      <url>/2020/03/11/npm/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Similarity"><a href="#Similarity" class="headerlink" title="Similarity"></a>Similarity</h1><p>Both <code>yarn</code> and <code>npm</code> are the package management of node.</p><p><code>npm</code> is the default package management of node, whereas <code>yarn</code> is developed by Facebook team.</p><p>But <code>yarn</code> has the same package registry with <code>npm</code> , which means <code>yarn</code> and <code>npm</code> actually retrieve packages from the same server.</p><hr><h1 id="Difference"><a href="#Difference" class="headerlink" title="Difference"></a>Difference</h1><h2 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h2><ul><li>Install packages one by one</li><li>Easy for beginners</li><li>latest version support version lock</li></ul><h2 id="yarn"><a href="#yarn" class="headerlink" title="yarn"></a>yarn</h2><ul><li>Install multiple packages simultaneously (way faster)</li><li>Cache packages for further installation.</li><li>Version lock is introduced.</li></ul><p>It is clear that, in the past, <code>yarn</code> has the advantage of stable versions of packages, but with recently introduced version lock by <code>npm</code> , the most significant difference between these two package managers is the speed of installation (<code>yarn</code> has better installing speed !!!)</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Customize and handle a Promise</title>
       <link href="/2020/03/08/promise/"/>
       <url>/2020/03/08/promise/</url>
