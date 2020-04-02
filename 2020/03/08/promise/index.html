@@ -79,7 +79,7 @@
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    1.8k
+                    2.1k
                 </span>
                 
                 
@@ -141,8 +141,12 @@
      .then(res =&gt;  console.log(`the result is ${res}`))
      .catch(err =&gt; console.log(err))
     // divide by 0</code></pre>
-<h2 id="Handle-Promise"><a href="#Handle-Promise" class="headerlink" title="Handle Promise"></a>Handle Promise</h2><p>As you can see above, it can be done by a synchronous way <code>.then</code> and <code>.catch</code></p>
-<p>Besides, there is an asynchronous method to deal with Promise</p>
+<h2 id="Handle-Promise"><a href="#Handle-Promise" class="headerlink" title="Handle Promise"></a>Handle Promise</h2><p>As you can see above, it can be done by <code>.then</code> and <code>.catch</code></p>
+<p>Besides, there is an <code>async/await</code> method to deal with Promise.</p>
+<p>This method is introduced in ES8. Basically, it is just a syntax sugar which means it serves the purpose with <code>.then</code> and <code>catch</code> but in a different form.</p>
+<blockquote>
+<p>Note: <code>await</code> must be inside the <code>async</code> function</p>
+</blockquote>
 <pre><code class="javaScript">    const checkRes = async (a,b) =&gt;{
         try {
             let res = await divide(a,b)
